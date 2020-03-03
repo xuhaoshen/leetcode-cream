@@ -1,4 +1,4 @@
-package algorithm.recall.leetcode_46;
+package algorithm.backtracking.leetcode_47;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class Solution {
 
-    public List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permuteUnique(int[] nums) {
         int length = nums.length;
         List<List<Integer>> res = new ArrayList<>();
         if(length == 0) {
@@ -43,7 +43,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        List<List<Integer>> result = solution.permute(new int[]{1, 2, 3});
+        List<List<Integer>> result = solution.permuteUnique(new int[]{1, 1, 2});
         System.out.println(result);
     }
 }

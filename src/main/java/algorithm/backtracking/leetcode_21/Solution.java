@@ -1,4 +1,4 @@
-package algorithm.recall.leetcode_21;
+package algorithm.backtracking.leetcode_21;
 
 /**
  * @author: create by shen

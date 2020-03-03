@@ -1,4 +1,4 @@
-package algorithm.recall.leetcode_51;
+package algorithm.backtracking.leetcode_51;
 
 import java.util.ArrayList;
 import java.util.List;

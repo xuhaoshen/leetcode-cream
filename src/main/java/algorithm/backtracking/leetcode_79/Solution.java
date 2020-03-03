@@ -1,4 +1,4 @@
-package algorithm.recall.leetcode_79;
+package algorithm.backtracking.leetcode_79;
 
 import java.util.BitSet;
 
