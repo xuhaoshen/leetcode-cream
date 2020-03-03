@@ -8,7 +8,7 @@
 	    <th>TITLE</th>  
 	</tr>
 	<tr>
-	    	<td rowspan="35">ALGORITHM</td>
+	    	<td rowspan="55">ALGORITHM</td>
 	    	<td rowspan="16">ARRAY</td>
 	    	<td>3   Longest Substring Without Repeating Characters  </td>
 	</tr>
@@ -28,7 +28,7 @@
 	<tr><td>345   Reverse Vowels of a String</td></tr>
 	<tr><td>438   Find All Anagrams in a String </td></tr>
 	<tr>
-		<td rowspan="19">BACKTRACKING</td>
+		<td rowspan="19">BINARY TREE</td>
 		<td>98   Validate Binary Search Tree</td>
 	</tr>
 	<tr><td>100   Same Tree</td></tr>
@@ -49,6 +49,29 @@
 	<tr><td>404   Sum of Left Leaves</td></tr>
 	<tr><td>437   Path Sum III  </td></tr>
 	<tr><td>450   Delete Node in a BST</td></tr>
+	<tr>
+		<td rowspan="20">BACKTRACKING</td>
+		<td>17   Letter Combinations of a Phone Number</td>
+	</tr>
+	<tr><td>21   Merge Two Sorted Lists</td></tr>
+	<tr><td>22   Generate Parentheses</td></tr>
+	<tr><td>39   Combination Sum</td></tr>
+	<tr><td>40   Combination Sum II</td></tr>
+	<tr><td>46   Permutations</td></tr>
+	<tr><td>47   	Permutations II</td></tr>
+	<tr><td>51   N-Queens</td></tr>
+	<tr><td>52   N-Queens II</td></tr>
+	<tr><td>60   Permutation Sequence</td></tr>
+	<tr><td>77   Combinations</td></tr>
+	<tr><td>78   Subsets</td></tr>
+	<tr><td>79   Word Search</td></tr>
+	<tr><td>90   Subsets II</td></tr>
+	<tr><td>93   Restore IP Addresses</td></tr>
+	<tr><td>131   Palindrome Partitioning</td></tr>
+	<tr><td>200   Number of Islands</td></tr>
+	<tr><td>216   Combination Sum III</td></tr>
+	<tr><td>401   Binary Watch</td></tr>
+	<tr><td>784   Letter Case Permutation</td></tr>
 
 
 </table>
