@@ -3,9 +3,9 @@
 
 <table>
 	<tr>
-	    <th>CHAPTER</th>
-	    <th>EPISODE</th>
-	    <th>TITLE</th>  
+	    <td>CHAPTER</td>
+	    <td>EPISODE</td>
+	    <td>TITLE</td>  
 	</tr>
 	<tr>
 	    	<td rowspan="55">ALGORITHM</td>
