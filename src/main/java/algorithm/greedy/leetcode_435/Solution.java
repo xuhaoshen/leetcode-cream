@@ -1,7 +1,7 @@
 package algorithm.greedy.leetcode_435;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * @author: create by shen
@@ -11,36 +11,25 @@ import java.util.List;
  */
 public class Solution {
 
-    public List<Integer> findAnagrams(String s, String p) {
-        char[] arrS = s.toCharArray();
-        char[] arrP = p.toCharArray();
-        int[] letters = new int[26];
-        int[] windows = new int[26];
-        int left = 0;
-        int right = 0;
-        List<Integer> result = new ArrayList<>();
-        for(int i = 0; i < arrP.length; i++) {
-            letters[arrP[i] - 'a'] += 1;
-        }
-        while (right < arrS.length) {
-            int currR = arrS[right] - 'a';
-            right++;
-            windows[currR] += 1;
-            while (windows[currR] > letters[currR]) {
-                int currL = arrS[left] - 'a';
-                left++;
-                windows[currL] -= 1;
-            }
-            if(right - left == arrP.length) {
-                result.add(left);
+    public int eraseOverlapIntervals(int[][] intervals) {
+        if(intervals.length == 0) return 0;
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[1]));
+        int count = 1;
+        int currEnd = intervals[0][1];
+        for(int[] interval: intervals) {
+            int currStart = interval[0];
+            if(currStart >= currEnd) {
+                count++;
+                currEnd = interval[1];
             }
         }
-        return result;
+        return intervals.length - count;
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        List<Integer> val = solution.findAnagrams("abab", "ab");
-        val.stream().forEach(v -> System.out.println(v));
+        int[][] intervals = new int[][]{{1,2}, {2,3}, {3,4}, {1,3}};
+        int res = solution.eraseOverlapIntervals(intervals);
+        System.out.println(res);
     }
 }
